@@ -1,0 +1,26 @@
+FF14 Price World — third-party data notices
+
+This package bundles derived data from the sources below. Runtime APIs are
+called over the public internet and do not require an API key.
+
+1. Chinese item names — data/items.zh.json
+   Source: thewakingsands/ffxiv-datamining-cn
+   https://github.com/thewakingsands/ffxiv-datamining-cn
+   The upstream repository license applies to the derived names. Review that
+   repository's LICENSE before redistributing this file.
+
+2. World id to server name mapping — data/worlds.id.json
+   Source: Universalis public API v2, endpoint /worlds
+   https://universalis.app/
+
+3. Market prices — runtime only, no data bundled
+   Source: Universalis public API v2
+   https://universalis.app/
+
+4. English item name fallback — runtime only, no data bundled
+   Source: xivapi v2
+   https://v2.xivapi.com/
+
+The World implementation targets the public Cortico world API and is intended
+for use with Coopanion. Cortico and Coopanion have their own licenses; this
+package does not copy code from either project.

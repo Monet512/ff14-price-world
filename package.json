@@ -1,0 +1,47 @@
+{
+  "name": "cortico-world-ff14-price",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "FF14 market price lookup World for Coopanion/Cortico, via Universalis. Chinese item names resolved offline.",
+  "license": "MIT",
+  "author": "ff14-price-world contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monet512/ff14-price-world.git"
+  },
+  "homepage": "https://github.com/Monet512/ff14-price-world#readme",
+  "keywords": [
+    "cortico-world",
+    "cortico"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.28.6",
+  "main": "./src/index.ts",
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "tags": [],
+    "describe": "describe.json"
+  },
+  "files": [
+    "src",
+    "data",
+    "README.md",
+    "CHANGELOG.md",
+    "NOTICE",
+    "describe.json"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "cortico": "^0.2.16",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

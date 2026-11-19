@@ -1,0 +1,29 @@
+{
+  "tools": [
+    {
+      "name": "ff14_price",
+      "description": "查询 FF14 市场（Universalis）里某个物品的价格。传入物品名（中文或英文）或数字物品ID；中文支持模糊搜索（如「羊角笛」会找到相近物品），多个接近候选时会先请你确认。返回已经写好、可以直接说给用户听的播报文案，含最低价与所在服务器。只读公开行情，不涉及游戏内交易。",
+      "parameters": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "item": {
+            "type": "string",
+            "description": "物品名，中文或英文均可；中文支持模糊搜索，名字记不全也能查；也可直接传数字物品ID。例如「高等以太药」「羊角笛」「Tincture of Strength」「27786」。"
+          }
+        },
+        "required": [
+          "item"
+        ]
+      },
+      "tags": [
+        "read"
+      ],
+      "summary": {
+        "zh": "用物品名或ID查 Universalis 市场价，返回含服务器名的最低价播报文案。",
+        "en": "Looks up Universalis market price by item name or ID and returns a ready-to-say report with server names."
+      }
+    }
+  ],
+  "events": []
+}

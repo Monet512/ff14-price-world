@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and test output
+dist/
+build/
+coverage/
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+
+# Logs and backups
+*.log
+pnpm-debug.log*
+*.bak
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Scratch folders, if a Git repo is created at the workspace root by mistake
+.tmp/
+.workbuddy/
